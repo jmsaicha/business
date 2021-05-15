@@ -1,0 +1,279 @@
+
+/*body styles*/
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+}
+button{
+    background-color: rgb(35, 185, 185) !important;
+    color: white !important;
+}
+i{
+    color:white;
+}
+.social a{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.social a i{
+    color: white;
+    margin-left: 5px;
+}
+
+/*navigation styles*/
+.upper-nav{
+    height: 50px;
+    background-color: teal;
+    color: white;
+    
+}
+.navbar{
+    background-color: rgb(35, 185, 185);
+}
+.navbar-brand{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color:greenyellow;
+}
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: greenyellow !important;
+}
+
+/*hero styles*/
+#hero{
+    position: relative;
+    background-image: url(/assets/images/21.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#hero:before {
+    content: "";
+    background:rgba(0, 128, 128, 0.199);
+    position: absolute;
+    bottom: 0;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+.hero{
+   height: 100vh;
+   color: white;
+}
+#hero > div > div > div.col-lg-8{
+    z-index: 1;
+}
+
+/*about styles*/
+.about-sm{
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: 0.5s;
+}
+.about-sm i{
+    font-size: 50px;
+    color: teal;
+}
+.about-sm:hover{
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 40%);
+}
+.about-bg{
+    background-color: teal;
+    color: white;
+}
+
+
+/*services styles*/
+#services{
+    background-color: teal;
+    color: white;
+}
+.service-c{
+    background-color: rgb(35, 185, 185);
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: 0.5s;
+}
+.service-c i{
+    font-size: 50px;
+}
+.service-c:hover{
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 40%);
+}
+
+/*portfolio styles*/
+#portfolio ul{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#portfolio ul li{
+    background-color: rgba(0, 128, 128, 0.199);
+    list-style: none;
+    margin: 5px;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+#portfolio ul li.active{
+    background-color: teal;
+    color: white;
+}
+#portfolio .product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.product .itemBox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio{
+    transition: .5s ease-in-out;
+}
+.portfolio:hover{
+    filter: brightness(80%);
+}
+
+/*testimonials styles*/
+#testimonials{
+    background-color: teal;
+    color: white;
+}
+.testimonial-c{
+    background-color: rgb(35, 185, 185);
+    color: white;
+}
+.carousel-item{
+    background-color: rgba(14, 22, 22, 0.603);
+    padding: 15px;
+}
+.carousel-item img{
+    max-width: 150px;
+    clip-path: circle();
+
+}
+.carousel-item p{
+    font-style: italic;
+}
+.carousel-item p i{
+    color: rgb(35, 185, 185);
+}
+.testimonials-bg{
+    background-color: rgb(35, 185, 185);
+    color: white;
+}
+
+/*team styles*/
+.team{
+    position: relative;
+}
+.team .social{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    justify-content: center;
+}
+.team:hover .social{
+    opacity: 1;
+    bottom: 100px;
+}
+.team .social a{
+    transition: color 0.3s;
+    color: #111111;
+    margin: 0 3px;
+    padding-top: 7px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background: teal;
+    display: inline-block;
+    transition: ease-in-out;
+    color: white;
+}
+.team .social a:hover{
+    background-color: #111111;
+}
+.team .social a i{
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+
+/*pricing styles*/
+#pricing{
+    background-color: teal;
+    color: white;
+}
+.price{
+    background-color: rgb(35, 185, 185);
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: 0.5s;
+}
+.price:hover{
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 40%);
+}
+.price ul{
+    list-style: none;
+}
+.price p strong{
+    font-size: 35px;
+}
+.line{
+    text-decoration: line-through;
+}
+
+/*contact styles*/
+#contact{
+    overflow: hidden;
+}
+.contact{
+    background-color: teal;
+    color: white;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: 0.5s;
+}
+.contact:hover{
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 40%);
+    background-color: rgb(35, 185, 185);
+}
+
+/*footer styles*/
+#footer{
+    background-color: teal;
+}
+.footer-2{
+    background-color: rgb(3, 56, 56);
+}
+.footer-1,
+.footer-2{
+    color: white;
+}
+
